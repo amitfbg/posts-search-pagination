@@ -4,10 +4,12 @@ import styled from "styled-components";
 const Container = styled.div`
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
 `;
 
 const NavigatePage = styled.span`
-  padding: 0.75rem;
+  padding: 0.5rem;
   border: 1px solid gray;
   cursor: pointer;
   visibility: ${({ isNavigationDisabled }) =>

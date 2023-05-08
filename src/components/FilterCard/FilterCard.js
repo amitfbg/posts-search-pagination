@@ -5,6 +5,9 @@ import { Clear } from "@material-ui/icons";
 
 const Container = styled.div`
   width: 25%;
+  @media screen and (max-width: 749px){
+    width: 50%;
+  }
 `;
 
 function FilterCard({ id, name, filterStateSet, filterValue, placeholder }) {
