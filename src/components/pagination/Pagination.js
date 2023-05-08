@@ -6,16 +6,17 @@ const Container = styled.div`
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
+  font-size: 1.25rem;
 `;
 
 const NavigatePage = styled.span`
-  padding: 0.5rem;
-  border: 1px solid gray;
+  padding: 0.25rem;
+  margin: 0.25rem;
   cursor: pointer;
   visibility: ${({ isNavigationDisabled }) =>
     isNavigationDisabled ? "hidden" : "visible"};
-  background-color: ${({ isPageSelected }) =>
-    isPageSelected && "rgb(220, 220, 220)"};
+  color: ${({ isPageSelected }) =>
+    isPageSelected && "red"};
 `;
 
 function Pagination({
