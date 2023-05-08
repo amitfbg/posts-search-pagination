@@ -15,8 +15,7 @@ const NavigatePage = styled.span`
   cursor: pointer;
   visibility: ${({ isNavigationDisabled }) =>
     isNavigationDisabled ? "hidden" : "visible"};
-  color: ${({ isPageSelected }) =>
-    isPageSelected && "red"};
+  color: ${({ isPageSelected }) => isPageSelected && "red"};
 `;
 
 function Pagination({
@@ -32,8 +31,6 @@ function Pagination({
       selectedPage !== currPage
     ) {
       setCurrPage(selectedPage);
-    } else {
-      setCurrPage(1);
     }
   };
   return (
